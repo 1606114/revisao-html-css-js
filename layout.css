@@ -1,0 +1,66 @@
+/*
+    RESETS
+*/
+body {
+  /* border: solid black 10px; */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  margin: 0;
+}
+
+/*
+    LAYOUT
+*/
+
+/*
+Cor de header: #DFE6ED
+Cor de body: #C3CFD9
+Cor do botão: #4B5C6B
+Cor de sucesso: #207868
+Cor de erro: #AC6363
+*/
+
+/* CABEÇALHO */
+.cabecalho {
+  background-color: #dfe6ed;
+  padding: 5px 10px 10px 10px;
+  /* text-align: center; */
+  /* height: 20%; */
+}
+
+.cabecalho__menu {
+  /* border: solid red 2px; */
+  display: inline-block;
+}
+
+.cabecalho__menu a {
+  display: inline-block;
+  background-color: #4b5c6b;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.cabecalho__titulo {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+
+/* PRINCIPAL */
+.principal {
+  background-color: #c3cfd9;
+  height: 100%;
+  padding: 15px;
+}

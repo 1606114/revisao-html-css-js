@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="formulario.css">
 </head>
+
 <body>
 
-    <header>
-        <nav>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
             <a href="#">Cadastro</a>
             <a href="listagem.html">Listagem</a>
         </nav>
-        <h1>CSS e JS</h1>
+        <h1 class="cabecalho__titulo">CSS e JS</h1>
     </header>
 
-    <main>
-        <form>
-            <input type="text" name="" id="">
-            <input type="text" name="" id="">
-            <button type="button">Cadastrar</button>
+    <main class="principal">
+        <form class="formulario">
+            <input placeholder="Digite o Título" type="text" name="" id="" class="formulario__input">
+            <input placeholder="Digite a Descrição" type="text" name="" id="" class="formulario__input">
+            <button type="button" class="formulario__botao">Cadastrar</button>
 
-            <div>
-                <p>Enviado com sucesso!</p>
-                <p>Formulário inválido!</p>
-            </div>
+            <div class="sucesso">Enviado com sucesso!</div>
+            <div class="erro">Formulário inválido!</div>
         </form>
     </main>
 </body>
+
 </html>
