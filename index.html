@@ -7,6 +7,7 @@
     <title>Revisão</title>
     <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="formulario.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -21,12 +22,12 @@
 
     <main class="principal">
         <form class="formulario">
-            <input placeholder="Digite o Título" type="text" name="" id="" class="formulario__input">
-            <input placeholder="Digite a Descrição" type="text" name="" id="" class="formulario__input">
-            <button type="button" class="formulario__botao">Cadastrar</button>
+            <input placeholder="Digite o Título" type="text" id="inputTitulo" class="formulario__input">
+            <input placeholder="Digite a Descrição" type="text" id="inputDescricao" class="formulario__input">
+            <button onclick="executar()" type="button" class="formulario__botao">Cadastrar</button>
 
-            <div class="sucesso">Enviado com sucesso!</div>
-            <div class="erro">Formulário inválido!</div>
+            <div id="sucesso" class="sucesso">Enviado com sucesso!</div>
+            <div id="erro" class="erro">Formulário inválido!</div>
         </form>
     </main>
 </body>
