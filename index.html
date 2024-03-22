@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="cabecalho">
+    <header id="cabecalho" class="cabecalho">
         <nav class="cabecalho__menu">
             <a href="#">Cadastro</a>
             <a href="listagem.html">Listagem</a>
@@ -26,6 +26,7 @@
             <input placeholder="Digite a Descrição" type="text" id="inputDescricao" class="formulario__input">
             <button onclick="executar()" type="button" class="formulario__botao">Cadastrar</button>
 
+            <div id="resultado" class="resultado"></div>
             <div id="sucesso" class="sucesso">Enviado com sucesso!</div>
             <div id="erro" class="erro">Formulário inválido!</div>
         </form>

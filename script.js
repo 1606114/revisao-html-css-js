@@ -2,17 +2,28 @@
 
 console.log("PÁGINA ABERTA!")
 
-function executar() {
-
+async function executar() {
     // Pegar valores dos inputs
-    const inputTitulo = document.getElementById("inputTitulo")
-    const inputDescricao = document.getElementById("inputDescricao")
+    const elementTitulo = document.getElementById("inputTitulo")
+    const elementDescricao = document.getElementById("inputDescricao")
 
-    const titulo = inputTitulo.value
-    const descricao = inputDescricao.value
+    const titulo = elementTitulo.value
+    const descricao = elementDescricao.value
+
+    const elementoE = document.getElementById("erro")
+    if (titulo == "" || descricao == "") {
+        elementoE.style.display = "block"
+
+        return // Finaliza a função inteira
+    }
+
+    elementoE.style.display = "none"
+    const elementoS = document.getElementById("sucesso")
+    elementoS.style.display = "block"
 
     // Fazer chamada para cadastrar livro
     const url = "https://api-aula.up.railway.app/livros"
+
     const payload = {
         title: titulo,
         description: descricao
@@ -26,12 +37,17 @@ function executar() {
         }
     }
 
-    fetch(url, fetchOptions)
+    console.log("ANTES DO FETCH")
 
-    // Mostrar resultado abaixo do form
-    const elementoS = document.getElementById("sucesso")
-    elementoS.style.display = "block"
+    const response = await fetch(url, fetchOptions)
+    const data = await response.json()
 
-    const elementoE = document.getElementById("erro")
-    elementoE.style.display = "block"
+    console.log(data)
+
+    console.log("DEPOIS DO FETCH")
+
+    // // Mostrar resultado abaixo do form
+    const elementoResultado = document.getElementById("resultado")
+    elementoResultado.innerHTML = data
+    elementoResultado.style.display = "block"
 }
