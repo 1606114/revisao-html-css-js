@@ -64,3 +64,14 @@ Cor de erro: #AC6363
   height: 100%;
   padding: 15px;
 }
+
+
+/* COMPONENTES */
+
+.botao {
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+}

@@ -16,14 +16,6 @@
     padding: 5px;
     margin-bottom: 5px;
   }
-  
-  .formulario__botao {
-    width: 100%;
-    box-sizing: border-box;
-    max-width: 100%;
-    border-radius: 5px;
-    padding: 5px;
-  }
 
   .sucesso, .erro, .resultado {
     margin-top: 10px;

@@ -1,0 +1,24 @@
+
+.resultado {
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  margin: 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.resultado p {
+  margin: 0px;
+}
+
+.livro {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
